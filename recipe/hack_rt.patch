@@ -1,0 +1,12 @@
+--- posix_ipc-1.1.1.orig/setup.py	2024-11-05 14:08:27.739308673 -0600
++++ posix_ipc-1.1.1/setup.py	2024-11-05 14:08:38.956273740 -0600
+@@ -46,8 +46,7 @@
+ 
+ # Linux & FreeBSD require linking against the realtime libs
+ # This causes an error on other platforms
+-if "REALTIME_LIB_IS_NEEDED" in d:
+-    libraries.append("rt")
++libraries.append("rt")
+ 
+ ext_modules = [distutools.Extension("posix_ipc",
+                                     source_files,
