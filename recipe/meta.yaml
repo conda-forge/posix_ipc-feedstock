@@ -1,5 +1,5 @@
 {% set name = "posix_ipc" %}
-{% set version = "1.2.0" %}
+{% set version = "1.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/posix_ipc-{{ version }}.tar.gz
-  sha256: b7444e2703c156b3cb9fcb568e85d716232f3e78f04529ebc881cfb2aedb3838
+  sha256: 6e559ac5bb5f6f233c396103f4868e383bbd8f4e54d20876910896f47d353448
   patches:
     - hack_rt.patch  # [linux]
 
