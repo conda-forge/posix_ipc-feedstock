@@ -109,7 +109,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-posix_ipc-green.svg)](https://anaconda.org/conda-forge/posix_ipc) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/posix_ipc.svg)](https://anaconda.org/conda-forge/posix_ipc) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/posix_ipc.svg)](https://anaconda.org/conda-forge/posix_ipc) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/posix_ipc.svg)](https://anaconda.org/conda-forge/posix_ipc) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-posix__ipc-green.svg)](https://anaconda.org/conda-forge/posix_ipc) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/posix_ipc.svg)](https://anaconda.org/conda-forge/posix_ipc) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/posix_ipc.svg)](https://anaconda.org/conda-forge/posix_ipc) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/posix_ipc.svg)](https://anaconda.org/conda-forge/posix_ipc) |
 
 Installing posix_ipc
 ====================
