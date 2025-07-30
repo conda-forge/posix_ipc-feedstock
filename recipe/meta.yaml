@@ -8,8 +8,6 @@ package:
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/posix_ipc-{{ version }}.tar.gz
   sha256: 6e559ac5bb5f6f233c396103f4868e383bbd8f4e54d20876910896f47d353448
-  patches:
-    - hack_rt.patch  # [linux]
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
