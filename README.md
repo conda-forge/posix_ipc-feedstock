@@ -227,6 +227,3 @@ Feedstock Maintainers
 
 * [@akrherz](https://github.com/akrherz/)
 
-
-<!-- dummy commit to enable rerendering -->
-
