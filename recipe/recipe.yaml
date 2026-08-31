@@ -1,0 +1,49 @@
+schema_version: 1
+
+context:
+  name: posix_ipc
+  version: "1.3.2"
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/posix_ipc-${{ version }}.tar.gz
+  sha256: 6923232111329954a8349f7d99f212b6e96b5206e77fbd39aaf1b3cb4a5e9260
+
+build:
+  number: 0
+  skip: win
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  build:
+    - if: build_platform != target_platform
+      then: python
+    - if: build_platform != target_platform
+      then: cross-python_${{ target_platform }}
+    - ${{ compiler('c') }}
+    - ${{ stdlib("c") }}
+  host:
+    - python
+    - pip
+    - setuptools
+  run:
+    - python
+
+tests:
+  - python:
+      imports:
+        - posix_ipc
+      pip_check: true
+
+about:
+  summary: POSIX IPC primitives (semaphores, shared memory and message queues) for Python
+  license: BSD-3-Clause
+  license_file: LICENSE
+  homepage: https://github.com/osvenskan/posix_ipc
+
+extra:
+  recipe-maintainers:
+    - akrherz
